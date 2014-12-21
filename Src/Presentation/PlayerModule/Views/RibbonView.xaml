@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="PlayerModule.Views.RibbonView" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <GroupBox Header="{Binding StaticViewName}"  VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <ToggleButton MaxHeight="40" MaxWidth="150" Margin="2,2,2,2" 
+                        Content="{Binding OpenButtonContent}" IsThreeState="False"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=IsChecked}"
+                        Command="{Binding OpenModuleCommand}" VerticalAlignment="Top"></ToggleButton>
+                <!--<Button MaxHeight="40" MaxWidth="150" Margin="2,2,2,2" Command="{Binding GetDataCommand}" VerticalAlignment="Top">Play playlist</Button>-->
+                <ToolBar>
+                    <Button Command="ApplicationCommands.Open">
+                        <Image Source="/Images/folder.gif" />
+                    </Button>
+                    <Separator />
+                    <Button x:Name="_play" Command="MediaCommands.Play">
+                        <Image Source="/Images/control_play_blue.png" />
+                    </Button>
+                    <Button x:Name="_pause" Command="MediaCommands.Pause">
+                        <Image Source="/Images/control_pause_blue.png" />
+                    </Button>
+                    <Button x:Name="_stop" Command="MediaCommands.Stop">
+                        <Image Source="/Images/control_stop_blue.png" />
+                    </Button>
+                </ToolBar>
+                <StatusBar Grid.Row="3">
+                    <StatusBar.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                            </Grid>
+                        </ItemsPanelTemplate>
+                    </StatusBar.ItemsPanel>
+                    <StatusBarItem>
+                        <TextBlock Name="lblProgressStatus">00:00:00</TextBlock>
+                    </StatusBarItem>
+                    <StatusBarItem Grid.Column="1" HorizontalContentAlignment="Stretch">
+                        <!--<Slider Name="sliProgress" Thumb.DragStarted="sliProgress_DragStarted"  Thumb.DragCompleted="sliProgress_DragCompleted" ValueChanged="sliProgress_ValueChanged" />-->
+                        <Slider Name="sliProgress" />
+                    </StatusBarItem>
+                    <!--<StatusBarItem Grid.Column="2">
+                        <ProgressBar Name="pbVolume" Width="50" Height="12" Maximum="1" Value="{Binding ElementName=mePlayer, Path=Volume}" />
+                    </StatusBarItem>-->
+                </StatusBar>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>
