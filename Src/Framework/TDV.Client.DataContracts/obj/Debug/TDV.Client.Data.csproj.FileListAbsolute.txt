@@ -1,0 +1,10 @@
+C:\Users\Guillaume\Desktop\WPFRealTime\WPFRealTime\Bin\TDV.Client.Data.dll
+C:\Users\Guillaume\Desktop\WPFRealTime\WPFRealTime\Bin\TDV.Client.Data.pdb
+C:\Users\Guillaume\Desktop\WPFRealTime\WPFRealTime\Src\Framework\WPF.RealTime.DataContracts\obj\Debug\TDV.Client.Data.dll
+C:\Users\Guillaume\Desktop\WPFRealTime\WPFRealTime\Src\Framework\WPF.RealTime.DataContracts\obj\Debug\TDV.Client.Data.pdb
+C:\Users\Guillaume\Desktop\WPFRealTime\TDV\Bin\TDV.Client.Data.dll
+C:\Users\Guillaume\Desktop\WPFRealTime\TDV\Bin\TDV.Client.Data.pdb
+C:\Users\Guillaume\Desktop\WPFRealTime\TDV\Src\Framework\WPF.RealTime.DataContracts\obj\Debug\TDV.Client.Data.dll
+C:\Users\Guillaume\Desktop\WPFRealTime\TDV\Src\Framework\WPF.RealTime.DataContracts\obj\Debug\TDV.Client.Data.pdb
+C:\Users\Guillaume\Desktop\WPFRealTime\TDV\Src\Framework\TDV.Client.DataContracts\obj\Debug\TDV.Client.Data.dll
+C:\Users\Guillaume\Desktop\WPFRealTime\TDV\Src\Framework\TDV.Client.DataContracts\obj\Debug\TDV.Client.Data.pdb
