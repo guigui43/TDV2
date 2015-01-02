@@ -144,6 +144,16 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\TDV.Client.DataContracts\TDV.Client.Data.csproj">
+      <Project>{b786a906-4e88-4975-ab35-74c5a7f32e5c}</Project>
+      <Name>TDV.Client.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\TDV.Client.Infrastructure\TDV.Client.Infrastructure.csproj">
+      <Project>{0afb2ba8-441c-4c95-be5d-74e254535c34}</Project>
+      <Name>TDV.Client.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>

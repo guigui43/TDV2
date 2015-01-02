@@ -68,6 +68,12 @@
       <Link>App.config</Link>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Framework\TDV.Client.DataContracts\TDV.Client.Data.csproj">
+      <Project>{b786a906-4e88-4975-ab35-74c5a7f32e5c}</Project>
+      <Name>TDV.Client.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
